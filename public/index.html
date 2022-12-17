@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./img-5C8e6KNUHhQuIemdKRxqbnAw.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/spinner.css" />
+    <title>OpenAI Image Generator</title>
+  </head>
+  <body>
+    <nav>
+      <div class="navbar">
+        <h2>Open AI Image Generator</h2>
+        <div class="items">
+          <a href="https://www.twitter.com/yo_itz_buchi" target="_blank"
+            >My Twitter</a
+          >
+          <a href="https://beta.openai.com/docs" target="_blank">Docs</a>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="img">
+        <div class="content">
+          <h1>Describe an Image</h1>
+          <form id="img-form">
+            <input
+              type="text"
+              id="prompt"
+              class="mainLoginInput"
+              placeholder="Enter detailed description of image"
+            />
+            <div class="form-control">
+              <select name="size" id="size">
+                <option value="small">Small</option>
+                <option value="medium" selected>Medium</option>
+                <option value="large">Large</option>
+              </select>
+            </div>
+            <div class="btn">
+              <button type="submit" id="submit-btn">Generate</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section id="img-view">
+        <div class="container-view">
+          <div class="error">That image could not be generated...</div>
+          <div class="image-container"></div>
+        </div>
+      </section>
+    </main>
+    <div class="spinner"></div>
+  </body>
+  <script src="./script.js"></script>
+</html>
