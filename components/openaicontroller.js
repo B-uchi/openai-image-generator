@@ -35,5 +35,4 @@ const generateimage = async (req, res) => {
     });
   }
 };
-
 module.exports = { generateimage };
