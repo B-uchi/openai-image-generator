@@ -1,7 +1,7 @@
-const dotenv = require('dotenv').config();
+const dotenv = require('dotenv');
 const { Configuration, OpenAIApi } = require("openai");
 
-dotenv.config('/etc/secrets/.env');
+dotenv.config('./etc/secrets/.env');
 const configuration = new Configuration({
       apiKey: process.env.OPENAI_API_KEY,
 });
