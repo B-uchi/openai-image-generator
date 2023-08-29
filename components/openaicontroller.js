@@ -1,12 +1,10 @@
-const dotenv = require('dotenv');
 const { Configuration, OpenAIApi } = require("openai");
 
-dotenv.config('./etc/secrets/.env');
 const configuration = new Configuration({
-      apiKey: process.env.OPENAI_API_KEY,
+      apiKey: process.env.OPEN_API_KEY,
 });
 const openai = new OpenAIApi(configuration);
-
+console.log(process.env.OPEN_API_KEY)
 const generateimage = async (req, res) => {
   const { prompt, size } = req.body;
   const imageSize =
